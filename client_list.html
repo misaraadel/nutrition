@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>nutrition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/lib/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/lib/all.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/lib/app-rtl.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+    </head>
+    <body>
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex search-box">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="food.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    nutrition
+                                </span>
+                                <span class="logo-lg">
+                                    nutrition
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+                        
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search ">
+                                <span class="fas fa-search"></span>
+                            </div>
+                        </form>
+                        <button class="mobile-search" type="button" data-toggle="modal" data-target="#mobileSearch" >
+                            <span class="fas fa-search"></span>
+                        </button>
+                        
+                    </div>
+
+                    <div class="d-flex dropdown-content">
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/avatar-1.jpg"
+                                    alt="Header Avatar">
+                            </button>
+                            <div class="profile-dropdown dropdown-menu dropdown-menu-right">
+                                <h4>
+                                    Hi, Sierra Ferguson
+                                </h4>
+                                <p>
+                                    Welcome to your profile.
+                                </p>
+                                <a href="#" class="logout">Logout</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                                <i class="uil-cog"></i>
+                            </button>
+                        </div>
+            
+                    </div>
+                </div>
+            </header>
+            <div class="modal fade" id="mobileSearch" tabindex="-1" role="dialog" aria-labelledby="mobileSearchLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="mobileSearchLabel">Search Project, items , project , or updates</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-content">
+                            <div class="row">
+                                <div class="col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search here...." />    
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary">search </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+
+                <!-- LOGO -->
+                <div class="navbar-brand-box">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            N
+                        </span>
+                        <span class="logo-lg">
+                            Nutrition
+                        </span>
+                    </a>
+
+                   
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+                    <i class="fa fa-fw fa-bars"></i>
+                </button>
+
+                <div data-simplebar class="sidebar-menu-scroll">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled" id="side-menu">
+
+                            <li>
+                                <a href="javascript: void(0);" class="items has-arrow waves-effect">
+                                    <img src="assets/images/food.svg" alt="">
+                                    <span>الطعام</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li>
+                                        <a class="list" href="food.html">
+                                            قائمه الطعام
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <button class="list" type="button" data-toggle="modal" data-target="#addNewRecodList">
+                                            اضافه صنف جديد
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="items has-arrow waves-effect">
+                                   
+                                    <img src="assets/images/user.svg" alt="">
+                                    <span>العملاء</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li>
+                                        <a class="list"  href="client_list.html">
+                                            قائمة العملاء
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="list" type="button" data-toggle="modal" data-target="#NewClient">
+                                            اضافة عميل جديد 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+
+            <!-- Left Sidebar End -->
+            <div class="modal fade" id="addNewRecodList" tabindex="-1" role="dialog" aria-labelledby="addNewRecodListLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="addNewRecodListLabel">
+                          اضافة صنف جديد 
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-content">
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="اسم الصنف" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="نوع الصنف" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الوزن" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="المعيار" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="البروتين" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الدهون" />    
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الكربوهيدرات" />    
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+                      <button type="button" class="btn btn-primary">حفظ</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal fade" id="addNewRecod" tabindex="-1" role="dialog" aria-labelledby="addNewRecodLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="addNewRecodLabel">
+                          اضافة صنف جديد 
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-content">
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="اسم الصنف" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="نوع الصنف" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الوزن" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="المعيار" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="البروتين" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الدهون" />    
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الكربوهيدرات" />    
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+                      <button type="button" class="btn btn-primary">حفظ</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="NewClient" tabindex="-1" role="dialog" aria-labelledby="NewClientLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="NewClientLabel">
+                          اضافة عميل جديد 
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-content">
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الاسم " />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="السن" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الوزن" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الطول" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="رقم الهاتف" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="العنوان" />    
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+                      <button type="button" class="btn btn-primary">حفظ البيانات</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="addClientList" tabindex="-1" role="dialog" aria-labelledby="addClientListLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="addClientListLabel">
+                          اضافة عميل جديد 
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-content">
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الاسم " />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="السن" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الوزن" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="الطول" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="رقم الهاتف" />    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="العنوان" />    
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+                      <button type="button" class="btn btn-primary">حفظ البيانات</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+                         <!-- start page title -->
+                         <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="mb-0 title-content">قائمة العملاء</h4>
+
+                                    <div class="page-title-right">
+                                        <ol class="daily-items m-0">
+                                            <li class="daily-content dropdown">
+                                                <button class="blue-color btn-content dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" border: 1px solid #3AAFA9 !important;">
+                                                    <img src="assets/images/printer.svg" style="margin: 0px;" alt="">
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">PDF</a>
+                                                    <a class="dropdown-item" href="#">XSL</a>
+                                                    <a class="dropdown-item" href="#">WORD</a>
+                                                </div>
+                                            </li>
+                                            <li class="daily-content">
+                                                <button type="button" class="blue-color btn-content" data-toggle="modal" data-target="#addClientList"> 
+                                                    <i class="fas fa-plus"></i>
+                                                    اضافة عميل جديد
+                                                </button>
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                </div>
+                            </div>
+                           
+                            <div class="content-index-page">
+                                <div class="row">
+                                    <div class="col-12 mb-5">
+                                        <div class="box-content">
+                                            <div class="table-responsive">
+                                                <table class="table  table-nowrap">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                الاسم
+                                                            </th>
+                                                            <th scope="col">
+                                                                السن  
+                                                            </th>
+                                                            <th scope="col">
+                                                                تاريخ الزيارة
+                                                            </th>
+                                                            <th scope="col">
+                                                                رقم الهاتف
+                                                            </th>
+                                                            <th scope="col">
+                                                                مشاهده
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                محمد احمد
+                                                            </td>
+                                                            <td>
+                                                                30
+                                                            </td>
+                                                            <td>
+                                                                15-12-2021
+                                                            </td>
+                                                            <td>
+                                                                 123456
+                                                            </td>
+                                                            <td>
+                                                                <ul class="flex-content">
+                                                                    <li>
+                                                                        <button type="button" data-toggle="modal" data-target="#QuickView">
+                                                                            <i class="far fa-eye"></i>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button type="button" data-toggle="modal" data-target="#EditRecod">
+                                                                            <i class="fas fa-pencil-alt"></i>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            <i class="far fa-trash-alt"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <div class="modal fade" id="EditRecod" tabindex="-1" role="dialog" aria-labelledby="EditRecodLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="EditRecodLabel">
+                      تعديل بيانات عميل 
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-content">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 mb-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="الاسم " />    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 mb-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="السن" />    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 mb-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="الوزن" />    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 mb-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="الطول" />    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 mb-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="رقم الهاتف" />    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 mb-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="العنوان" />    
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+                  <button type="button" class="btn btn-primary">حفظ البيانات</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="QuickView" tabindex="-1" role="dialog" aria-labelledby="QuickViewLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="QuickViewLabel">
+                      معلومات عن العميل
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table  table-nowrap">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    الاسم
+                                </th>
+                                <td>
+                                    محمد احمد عبدالله 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">
+                                    السن 
+                                </th>
+                                <td>
+                                    25
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">
+                                    تاريخ الزياره
+                                </th>
+                                <td>
+                                    12-12-2020
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">
+                                    رقم الهاتف
+                                </th>
+                                <td>
+                                    0100123123
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary"  data-dismiss="modal">تم المعاينة</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+       
+        <!-- END layout-wrapper -->
+        <!-- JAVASCRIPT -->
+        <script src="assets/js/lib/jquery.min.js"></script>
+        <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/lib/metisMenu.min.js"></script>
+        <script src="assets/js/lib/app.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>

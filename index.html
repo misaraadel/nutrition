@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>nutrition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/lib/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/lib/all.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/lib/app-rtl.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <section class="form-login-data">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 m-auto">
+                        <form class="form-data">
+                            <div class="row">
+                                <div class="col-12 mb-5">
+                                    <div class="content">
+                                        <a href="#" class="brand-name">
+                                            Nutrition
+                                        </a>
+                                        <h4>
+                                            تسجيل الدخول
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                              <div class="input-group-text">
+                                                <img src="assets/images/email.svg" alt="" /> 
+                                              </div>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder=" البريد الالكتروني " />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                              <div class="input-group-text">
+                                                <img src="assets/images/password.svg" alt="" /> 
+                                              </div>
+                                            </div>
+                                            <input type="password" id="acceptNewPassId" class="form-control" placeholder="كلمة المرور  " />
+                                            <span class="password"  onclick="acceptNewPassFun()" >
+                                                <i id="toggle" class="fas fa-eye"></i>
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                  <div class="btn-contain">
+                                        <a href="food.html" class="btn-content blue-color">
+                                            تسجيل دخول
+                                        </a>
+                                  </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> 
+       
+         
+        <!-- END layout-wrapper -->
+        <!-- JAVASCRIPT -->
+        <script src="assets/js/lib/jquery.min.js"></script>
+        <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/lib/metisMenu.min.js"></script>
+        <script src="assets/js/lib/app.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            var acceptNewPass = false;
+            const toggle = document.getElementById('toggle');
+            function acceptNewPassFun(){
+                if(acceptNewPass){
+                    document.getElementById("acceptNewPassId").setAttribute("type" , "password");
+                    toggle.classList.add('fa-eye');
+                    toggle.classList.remove('fa-eye-slash');
+                    acceptNewPass = false;
+                }else{
+                    document.getElementById("acceptNewPassId").setAttribute("type" , "text");
+                    toggle.classList.remove('fa-eye');
+                    toggle.classList.add('fa-eye-slash');
+                    acceptNewPass = true;
+                }
+            }
+        </script>
+    </body>
+</html>
